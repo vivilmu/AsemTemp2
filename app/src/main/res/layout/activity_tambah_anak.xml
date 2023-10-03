@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".TambahAnakActivity">
+
+  <!-- Judul atau teks tambah anak -->
+  <TextView
+      android:id="@+id/textViewAddChild"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Tambah Anak"
+      android:textSize="24sp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="32dp" />
+
+  <!-- Nama anak -->
+  <EditText
+      android:id="@+id/editTextName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Nama Anak"
+      android:layout_below="@id/textViewAddChild"
+      android:layout_marginTop="16dp" />
+
+  <!-- Umur anak -->
+  <EditText
+      android:id="@+id/editTextAge"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Umur Anak"
+      android:layout_below="@id/editTextName"
+      android:layout_marginTop="16dp"
+      android:inputType="number"/>
+
+  <!-- Pilihan jenis kelamin -->
+  <RadioGroup
+      android:id="@+id/radioGroupGender"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/editTextAge"
+      android:layout_marginTop="16dp"
+      android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radioButtonMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-laki"
+        android:checked="true" />
+
+    <RadioButton
+        android:id="@+id/radioButtonFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan" />
+  </RadioGroup>
+
+  <!-- Pilihan avatar -->
+  <ImageView
+      android:id="@+id/imageViewAvatar"
+      android:layout_width="200dp"
+      android:layout_height="250dp"
+      android:layout_below="@id/radioGroupGender"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp"
+      android:clickable="true"
+      android:src="@drawable/cowo1"
+      android:contentDescription="Avatar" />
+
+  <!-- Tombol navigasi avatar -->
+  <Button
+      android:id="@+id/buttonPrevAvatar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Prev"
+      android:layout_below="@id/imageViewAvatar"
+      android:layout_alignParentStart="true"
+      android:layout_marginTop="16dp" />
+
+  <Button
+      android:id="@+id/buttonNextAvatar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Next"
+      android:layout_below="@id/imageViewAvatar"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="16dp" />
+
+  <!-- Tombol untuk menyimpan data anak -->
+  <Button
+      android:id="@+id/buttonSaveChild"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Simpan"
+      android:layout_below="@id/buttonNextAvatar"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp" />
+
+</RelativeLayout>

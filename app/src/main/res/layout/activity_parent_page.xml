@@ -1,0 +1,92 @@
+<!-- activity_parent_page.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutChildList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ParentPageActivity">
+
+    <!-- TextView di atas RecyclerView -->
+    <TextView
+        android:id="@+id/textViewAboveRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Profil Anak"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+    <!-- Tombol untuk menambah anak -->
+    <Button
+        android:id="@+id/buttonTambahAnak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Anak"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewChildName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTambahAnak"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewChildAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildName"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewChildGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChildAge"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="16sp" />
+
+    <!-- Tombol untuk pengaturan jam mandi -->
+    <Button
+        android:id="@+id/buttonPengaturanMandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan Mandi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Tombol untuk pengaturan jam makan -->
+    <Button
+        android:id="@+id/buttonPengaturanMakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan Makan"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Tombol untuk pengaturan jam tidur -->
+    <Button
+        android:id="@+id/buttonPengaturanTidur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Pengaturan Tidur" />
+
+
+</LinearLayout>

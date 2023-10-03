@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".HomePageActivity">
+
+    <ImageButton
+        android:id="@+id/buttonBackToParent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ortu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        />
+
+    <!-- Teks atau gambar profil anak-anak -->
+
+    <!-- Tombol-tombol aksi -->
+
+    <ImageButton
+        android:id="@+id/shopButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/buttonBackToParent"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@id/buttonBackToParent"
+        android:scaleType="fitXY"
+        android:src="@drawable/keranjang"
+        android:text="Tombol Kiri" />
+
+
+    <Button
+        android:id="@+id/buttonMandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mandi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonMakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makan"
+        android:layout_below="@id/buttonMandi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonTidur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidur"
+        android:layout_below="@id/buttonMakan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonBeliBaju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTidur"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Beli Baju" />
+
+    <Button
+        android:id="@+id/buttonGantiBaju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBeliBaju"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="Ganti Baju" />
+
+
+</RelativeLayout>

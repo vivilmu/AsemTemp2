@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewChildAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cewe1" />
+
+    <TextView
+        android:id="@+id/textViewChildName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama: Anak 1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewChildAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umur: 5 tahun"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewChildGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin: Laki-laki"
+        android:textSize="16sp" />
+
+</LinearLayout>

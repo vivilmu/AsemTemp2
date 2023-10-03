@@ -1,0 +1,42 @@
+<!-- clothes_list_item.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Gambar baju -->
+    <ImageView
+        android:id="@+id/clothesImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baju1"
+        android:contentDescription="Deskripsi gambar" />
+
+    <!-- Nama baju dan harga -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <!-- Nama baju -->
+        <TextView
+            android:id="@+id/clothesNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Baju: Kaos ajha"
+            android:textSize="18sp" />
+
+        <!-- Harga baju -->
+        <TextView
+            android:id="@+id/clothesPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga: 20"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
